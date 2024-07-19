@@ -1,0 +1,734 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* ///////////////////////style header/////////////////////////////// */
+.header-top{
+   
+    width: 100%;
+    height: auto;
+   
+    
+}
+.container-header-top{
+    width: 80%;
+    margin-left: 200px;
+    
+    overflow: auto;
+    position: fixed;
+    z-index: 5;
+    overflow: auto;
+    background-color: rgba(32, 34, 34, 0.664);
+}
+.logo-header{
+    width: 150px;
+    height: 50px;
+    float: left;
+}
+.list-header-top{
+    float: right;
+    margin-top: 15px;
+}
+.list-header li a{
+    text-decoration: none;
+    color: rgb(240, 217, 10);
+    
+}
+.list-header li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 5px;
+    
+
+}
+.list-header li:hover a{
+    text-decoration: underline blue 3px;
+}
+
+
+.blog-post p{
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 15px;
+    
+    position: absolute;
+    margin-left: 1075px;
+    
+    
+}
+/* problems header ---div elblog ----background  */
+/* ///////////////////////style header/////////////////////////////// */
+/* ///////////////////section one style//////////////////////// */
+.home{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../imags/vecteezy_black-stone-texture-background_22504984.jpeg);
+    background-size:100vw;
+
+    position: relative;
+    
+}
+.overlay-home{
+    background-color: rgba(0,0,0, .5);
+    
+    width: 100%;
+    height: 100%;
+    position:absolute;
+
+}
+.content-home{
+    width: 50%;
+    /* background-color: aqua; */
+    position: absolute;
+    top:50%;
+    left:50%;
+    
+    
+    transform: translate(-50%,-50%);
+    text-align: center;
+   
+    
+}
+.home-title{
+    font-size: 60px;
+    color: white;
+
+}
+.home-parag{
+    color:rgb(215, 225, 233);
+    letter-spacing: 1px;
+    font-size: 21px;
+}
+.home-btn{
+    padding: 20px 25px;
+    color: black;
+   font-size: medium;
+   text-transform: capitalize;
+    cursor: pointer;
+
+}
+.first-btn{
+    background-color: blue;
+}
+.home-btn:hover{
+    opacity: .5;
+}
+
+
+
+
+/* ///////////////////section one style//////////////////////// */
+
+/* ////////////////////section two style////////////////////// */
+.section-two{
+    height: 100vh;
+}
+.title-section-two{
+    margin-top: 40px;
+}
+.container-section-two{
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+}
+.item-section-two{
+    width: 30%;
+    border-radius: 2px;
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+    height: 300px;
+    padding: 30px;
+    position: relative;
+    
+    
+}
+.icon-sec-two,.title-item-section-two,.prag-item-section-two,.link-item-section-two{
+    font-size: x-large;
+    margin-top: 5px;
+    padding: 5px 0;
+}
+
+.icon-sec-two{
+    font-size: xx-large;
+    color: rgb(2, 150, 249);
+}
+.second-item{
+    margin: 0 5%;
+}
+.link-item-section-two{
+    color: rgb(2, 150, 249);
+    text-decoration: none;
+    margin-top: 30px;
+}
+.item-section-two::before {
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height:0;
+   
+   
+    top: 0;
+    left: 0;
+    background-color:#333;
+    opacity: 0;
+    
+    
+}
+.item-section-two:hover::before{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+
+    
+}
+
+
+/* problems section two when i put hover with title and paragraph ::after hidde them with color wite */
+/* ////////////////////section two style////////////////////// */
+
+/* /////////////////////////////section three style///////////////// */
+
+.sectio-three{
+    background-color: rgb(244, 244, 244);
+    padding: 100px 0;
+}
+
+.continer-section-three{
+    width:80%;
+    margin:auto
+}
+.parent-section-three{
+    overflow: auto;
+    margin:10% 0;
+
+}
+.item-section-three{
+    width:30%;
+    height: 300px;
+    background-image: url(../imags/download.jpg);
+    background-size: cover;
+    position: relative;
+    float:left;
+    margin-bottom: 5%;
+
+}
+.middle{
+    margin: 0 5%;
+}
+.overlay-section-three{
+    text-align: center;
+    font-size: large;
+    /* padding: 70px; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .5);
+    opacity: 0;
+    visibility: hidden;
+}
+/* .title-item-secion-three,.parag-item-section-three ,.a-sec-3{
+    padding: 50px;
+} */
+.title-item-secion-three{
+    padding-top: 100px;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(54, 128, 255);
+    
+}
+.parag-item-section-three{
+    font-size: 20px;
+    color: white;
+    
+}
+.icon-sec-3 a i{
+    font-size: 30px;
+    color: rgb(118, 54, 255);
+    background-color: rgb(54, 128, 255); 
+}
+.item-section-three:hover .overlay-section-three{
+    opacity: 1;
+    visibility: visible;
+    transition: 2s;
+}
+
+/* /////////////////////////////section three style///////////////// */
+/* ///////////////////////////section four style/////////////////// */
+.container-section-four{
+    width: 80%;
+    margin: auto;
+}
+.header-four{
+    padding: 50px 0;
+}
+.parent-section-four{
+    overflow: auto;
+    padding-bottom: 100px;
+}
+.item-section-four{
+    width: 30%;
+    height: 200px;
+    border: 2px solid;
+    overflow: auto;
+    margin-bottom: 19px;
+    float: left;
+    position: relative;
+}
+.middle-four{
+    margin: 0 5%;
+}
+.icon-item-section-four{
+    width: 20%;
+    float: left;
+}
+.info-item-section-four{
+    width: 80%;
+    float: right;
+    padding: 30px 1px;
+}
+.icon-item-section-four i{
+    font-size: xx-large;
+    color:rgb(54, 128, 255); 
+    text-align: center;
+    padding-top: 30px;
+    padding-left:19px;
+}
+.info-item-section-four p{
+    color: gray;
+    padding: 30px 0;
+    line-height: 23px;
+}
+.item-section-four::after{
+    position: absolute;
+    content: "";
+    top:0;
+    left:0;
+    width: 0;
+    height: 0;
+    background-color: rgba(0,0,0, .5);
+    opacity: 0;
+}
+.item-section-four:hover::after{
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+
+}
+/* ///////////////////////////section four style/////////////////// */
+
+/* ////////////////////////////section five style//////////////// */
+.container-section-five{
+    width: 80%;
+    margin: auto;
+    height: 70vh;
+  
+}
+.parent-section-five{
+    overflow: auto;
+   
+}
+.left-section-five{
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+.right-section-five{
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+.right-section-five img{
+    width: 300px;
+    height: 400px;
+    margin-bottom: 5px;
+}
+.icon-five{
+    color: rgb(9, 144, 255);
+}
+.title-five h2{
+    text-align: left;
+    padding-left: 0;
+}
+.p-five{
+   margin-left: 10px;
+   
+}
+.parag-section-five{
+    padding: 40px 0;
+    font-size: larger;
+    color: gray;
+
+}
+.info-section-five i,span{
+    padding: 15px 0;
+    font-size: larger;
+    color: gray;
+}
+.info-section-five i{
+    color: rgb(0, 162, 255);
+}
+/* ////////////////////////////section five style//////////////// */
+
+/* //////////////////////////////section six style///////////// */
+.section-six{
+    background-image: url(../imags/Fitness-Gym-Cover.jpg);
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+}
+.overlay-section-six{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .5);
+}
+.container-section-six{
+    width: 80%;
+    margin: auto;
+    height: 350px;
+}
+.parent-section-six{
+    overflow: auto;
+}
+.item-section-six{
+    width: 25%;
+    font-size: larger;
+    color: aliceblue;
+    float:left;
+    /* height: 350px; */
+    text-align: center;
+}
+.item-section-six i{
+    padding-top: 100px;
+    font-size: 50px;
+    color: rgb(0, 162, 255);
+}
+/* //////////////////////////////section six style///////////// */
+/* ///////////////////////////section seven style/////////////// */
+.container-section-seven{
+    width: 80%;
+    margin: auto;
+}
+.parent-section-seven{
+    overflow:auto;
+}
+.item-section-seven{
+    width: 30%;
+    border: 2px solid gray;
+    float: left;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+
+}
+.middle-seven{
+    margin:0 5%;
+}
+.border-header-item{
+    width:100px;
+    height: 100px;
+    border: 2px solid rgb(0, 205, 251);
+    border-radius: 50%;
+   
+    margin: 10px auto;
+}
+.border-header-item h3{
+    font-size: xx-large;
+    padding-top: 8px;
+}
+.item-section-seven ul li{
+    padding: 10px 0;
+    list-style: none;
+}
+.item-section-seven button{
+    width: 90px;
+    height: 30px;
+    border: 2px solid rgb(0, 205, 251);
+}
+
+.item-section-seven::after{
+    position: absolute;
+    content: "";
+    top:0;
+    left:0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0,0,0, .5);
+    opacity: 0;
+}
+.item-section-seven:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 2s;
+}
+.item-section-seven:hover .title-item{
+ color: red;
+}
+.item-section-seven:hover .border-header-item h3{
+    color: red;
+}
+.item-section-seven:hover .duration{
+    color: red;
+}
+
+/* ///////////////////////////section seven style/////////////// */
+/* /////////////////////////////section eight style//////////// */
+.section-eight{
+    background-image: url(../imags/Fitness-Gym-Cover.jpg);
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    margin-top: 200px;
+}
+.overlay-section-eight{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .5);
+}
+.container-section-eight{
+    width: 80%;
+    margin: auto;
+    height: 350px;
+    overflow: auto;
+}
+.item-section-eight{
+    width: 50%;
+    float: left;
+   
+}
+.info-eight{
+    overflow: auto;
+}
+.left-eight,.right-eight{
+    float: left;
+}
+.left-eight img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.right-eight{
+    margin: 30px 15px;
+}
+.right-eight h2{
+    color: azure;
+}
+.right-eight span{
+    color: rgb(0, 72, 255);
+}
+.item-section-eight p{
+    color: azure;
+    padding: 25px 25px;
+}
+.parent-section-eight{
+    margin-top: 70px;
+}
+/* /////////////////////////////section eight style//////////// */
+/* /////////////////////// style section 9 /////////////////////////// */
+.container-nine{
+    width: 75%;
+    margin: auto;
+}
+
+.title-nine{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+   
+    
+}
+.line-nine{
+    width: 50px;
+    height: 5px;
+    margin: auto;
+    background-color: blue;
+    margin-top: -1px
+  
+}
+.team-content{
+    overflow: auto;
+    margin-top: 100px;
+ 
+
+}
+.section-header{
+    text-align: center;
+
+   
+}
+.our-team{
+    margin: 200px 0;
+    
+}
+.team-item{
+    float: left;
+    width: 30%;
+    padding: 12px 20px;
+    text-align: center;
+
+    position: relative;
+    background-color: rgb(233, 226, 240);
+}
+.DD{
+    margin: 0px 5%;
+}
+.image-item img{
+    width: 100%;
+    
+ 
+}
+.image-item{
+    position: relative;
+}
+.overlay-icons{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .5);
+    visibility: hidden;
+}
+.team-item:hover .overlay-icons{
+    visibility: visible;
+}
+.team-item a{
+    display: block;
+    font-size: 19px;
+    background-color: rgb(105, 105, 243);
+    width: 40px;
+    height: 40px;
+    color: aliceblue;
+    margin-left: auto;
+
+}
+.team-item a i {
+    line-height: 40px;
+    
+}
+.info-item{
+    padding: 11px 0;
+    text-transform: capitalize;
+}
+.team-item::after{
+    position: absolute;
+    content:"";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0,0,0, .5);
+}
+.team-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: .5s;
+}
+.team-item:hover .info-item h2{
+    color: azure;
+}
+.team-item:hover .info-item p{
+    color: rgb(0, 85, 255);
+}
+/* /////////////////////// style section 9 /////////////////////////// */
+/* ////////////////////////style section 10/////////////////////////// */
+.img-ten{
+    width:200px ;
+    height: 200px;
+}
+.container-section-ten{
+    width:80%;
+    margin:100px auto;
+}
+.parent-section-ten{
+    overflow: auto;
+    background-color: rgb(247, 242, 242);
+}
+.item-section-ten{
+    width:30%;
+    float:left;
+    position: relative;
+    background-color: white;
+}
+.middle-ten{
+    margin:0 5%;
+}
+.item-section-ten i{
+    color: rgb(0, 128, 255);
+    margin-left: 10px;
+}
+.a-ten{
+    font-size: large;
+    color: rgb(0, 128, 255);
+    text-decoration: none;
+}
+.item-section-ten::after{
+    position: absolute;
+    content:"";
+    top:0;
+    left:0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    background-color: rgba(0, 128, 255,.5); ;
+}
+.item-section-ten:hover::after{
+    width: 100%;
+    height:100%;
+    opacity: .5;
+    transition: 1s;
+}
+.title-section-ten{
+    padding: 10px 0;
+}
+.p-ten{
+    padding-bottom: 10px;
+}
+/* ////////////////////////style section 10/////////////////////////// */
+/* ////////////////////////footer style//////////////////////////////// */
+.container-footer{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.img-footer{
+    width: 200px;
+    height: 100px;
+}
+.footer{
+    background-color: rgb(66, 65, 65);
+    height: 500px;
+}
+.p-footer{
+    color: rgb(171, 171, 171);
+}
+.footer-icons a i{
+    font-size:xx-large;
+    color: rgb(0, 162, 255);
+    padding: 15px 5px;
+
+}
+/* ////////////////////////footer style//////////////////////////////// */
